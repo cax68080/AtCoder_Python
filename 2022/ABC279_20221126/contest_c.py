@@ -15,17 +15,14 @@ for _ in range(h):
         list_b[i].append(b[i])
 #print(list_a)
 #print(list_b)
-cnt = 0
+list_a.sort(key=None,reverse=False)
+list_b.sort(key=None,reverse=False)
+result = "Yes"
 for j in range(w):
-    for k in range(w):
-        if list_a[k] == list_b[j]:
-            cnt += 1
-            break
-if cnt == w:
-    print('Yes')
-else:
-    print('No')
-
+    if list_a[j] != list_b[j]:
+        result = "No"
+        break
+print(result)
 
 
 
