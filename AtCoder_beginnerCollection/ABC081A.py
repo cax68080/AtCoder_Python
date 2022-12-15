@@ -1,5 +1,0 @@
-s = input()
-a = int(s[0:1])
-b = int(s[1:2])
-c = int(s[2:])
-print(a+b+c)
