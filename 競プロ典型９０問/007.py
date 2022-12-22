@@ -34,5 +34,4 @@ for _ in range(q):
     else:
         print(max_a)
     
->>>>>>> origin/main
 
