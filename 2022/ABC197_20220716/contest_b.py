@@ -11,26 +11,38 @@ x = x - 1
 y = y - 1
 for i in range(1,h):
     #print(i)
-    if list_cell[y][i] == ".":
-        count += 1
+    if 0 <= x - i < h:
+        if list_cell[x - i][y] == ".":
+            count += 1
+        else:
+            break
     else:
         break
-for i in range(x + 1,w + 1,1):
-    print(i)
-    if list_cell[y][i] == ".":
-        count += 1
-    else:
-        break
-for i in range(y - 1,-1,-1):
+for i in range(1,h):
     #print(i)
-    if list_cell[i][x] == ".":
-        count += 1
+    if 0 <= x + i < h:
+        if list_cell[x + i][y] == ".":
+            count += 1
+        else:
+            break
     else:
         break
-for i in range(y + 1,h + 1,1):
+for i in range(1,w):
     #print(i)
-    if list_cell[i][x] == ".":
-        count += 1
+    if 0 <= y - i < w:
+        if list_cell[x][y - i] == ".":
+            count += 1
+        else:
+            break
+    else:
+        break
+for i in range(1,w):
+    #print(i)
+    if 0 <= y + i < w:
+        if list_cell[x][y + i] == ".":
+            count += 1
+        else:
+            break
     else:
         break
 print(count)
