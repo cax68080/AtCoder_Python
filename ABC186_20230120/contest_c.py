@@ -12,8 +12,8 @@ def chg_oct(num):
             result = result + str(amr)
             break
         else:
-            result = result + str(ans)
-            num = amr
+            result = result + str(amr)
+            num = ans
     return result
 count = 0
 num_10 = ""
@@ -23,7 +23,7 @@ for i in range(1,n + 1):
     num_8 = chg_oct(i)
     #print(num_8)
     if ("7" in num_10) or ("7" in num_8):
-        print(num_10)
+        #print(num_10)
         pass
     else:
         #print(num_8)
