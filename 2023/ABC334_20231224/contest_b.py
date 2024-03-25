@@ -11,7 +11,7 @@ if a < l:
         elif r < pos:
             break
     print(count)
-if (a >= l) and (a < r):
+if (a >= l) and (a <= r):
     while True:
         pos += m
         if (l <= pos) and (pos <= r):
